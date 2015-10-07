@@ -34,6 +34,20 @@ Example:
       paper-material {
         overflow-y: auto;
         height: 100%;
+        background-color: #fff;
+      }
+
+      .graph {
+        background-color: #eaeaea;
+      }
+
+      .scale-icon {
+        width: 50%;
+        height: 100%;
+      }
+
+      #counter {
+        font-size: 3vw;
       }
 
     </style>
@@ -48,7 +62,14 @@ Example:
       </template>
     </div>    
 
-    <paper-material class="layout vertical flex" elevation="3">
+    <paper-material class="layout horizontal flex" elevation="3">
+      <div class="layout vertical flex center-center ">
+        <iron-icon class="center-center flex-3 scale-icon" src="/images/cards/users.svg"></iron-icon>
+        <div id="counter" class="flex center-center">[[count]]</div>
+        <div class="flex">[[progression]]</div>
+      </div>
+      <div class="graph flex">
+      </div>
     </paper-material>
 
   </template>

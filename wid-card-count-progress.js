@@ -6,7 +6,34 @@
 
     is: 'wid-card-count-progress',
 
-    properties: {}
+    properties: {
+      /**
+       * level
+       * @type {Boolean}
+       */
+      count: {
+        type: Number,
+        value: 0
+      },
+
+      /**
+       * name
+       * @type {String}
+       */
+      progression: {
+        type: Number,
+        value: 0
+      },
+
+      /**
+       * title
+       * @type {String}
+       */
+      graphData: {
+        type: Object
+      }
+
+    }
 
   });
 })();
