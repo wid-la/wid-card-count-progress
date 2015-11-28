@@ -7,6 +7,7 @@
 
 <link rel="import" href="../wid-card-standard-behavior/wid-card-standard-behavior.html">
 <link rel="import" href="../wid-card-weight-behavior/wid-card-weight-behavior.html">
+<link rel="import" href="../wid-card-theme-behavior/wid-card-theme-behavior.html">
 <link rel="import" href="../wid-versatile-websocket/wid-versatile-websocket.html">
 <link rel="import" href="../wid-card-subscriptions-behavior/wid-card-subscriptions-behavior.html">
 
@@ -35,6 +36,7 @@ Example:
         overflow-y: auto;
         height: 100%;
         background-color: #fff;
+        overflow: visible;
       }
 
       .graph {
@@ -62,7 +64,7 @@ Example:
       </template>
     </div>    
 
-    <paper-material class="layout horizontal flex" elevation="3">
+    <paper-material id="mainContent" class="layout horizontal flex" elevation="3">
       <div class="layout vertical flex center-center ">
         <iron-icon id="countImage" class="center-center flex-3 scale-icon" src="/images/cards/users.svg"></iron-icon>
         <div id="counter" class="flex center-center">[[count]]</div>

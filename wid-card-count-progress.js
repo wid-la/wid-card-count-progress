@@ -6,29 +6,20 @@
 
     is: 'wid-card-count-progress',
 
+    behaviors: [Polymer.WidCardStandardBehavior, Polymer.WidCardWeightBehavior, Polymer.WidCardSubscriptionsBehavior, Polymer.WidCardThemeBehavior],
+
     properties: {
-      /**
-       * level
-       * @type {Boolean}
-       */
+
       count: {
         type: Number,
         value: 0
       },
 
-      /**
-       * name
-       * @type {String}
-       */
       progression: {
         type: Number,
         value: 0
       },
 
-      /**
-       * title
-       * @type {String}
-       */
       graphData: {
         type: Object
       }
