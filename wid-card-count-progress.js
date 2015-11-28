@@ -33,6 +33,12 @@
         type: Object
       }
 
+    },
+
+    _themeChangedCard: function _themeChangedCard(themeName) {
+      if (themeName !== null) {
+        this.$.countImage.src = '/images/themes/' + themeName + '/users.svg';
+      }
     }
 
   });
